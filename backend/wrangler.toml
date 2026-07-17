@@ -2,6 +2,12 @@ name = "wechat-obsync"
 main = "src/index.ts"
 compatibility_date = "2024-01-01"
 
+# NOTE: sensitive identifiers removed. Set real values via deployment platform secrets or CI env.
+# Do not store account_id or KV namespace IDs in the repository. Use Cloudflare dashboard or env secrets.
+
+# account_id = "REDACTED"
+
 [[kv_namespaces]]
 binding = "OBSYNC_KV"
-id = "2e8eedd0edcb4252a32a79d805c80913"
+# Replace the id at deploy time via secrets/configuration
+id = "REDACTED_KV_NAMESPACE_ID"
