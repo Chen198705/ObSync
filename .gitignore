@@ -3,3 +3,7 @@ node_modules/
 .DS_Store
 *.log
 .env
+
+# Ignore private project configs
+/miniprogram/project.private.config.json
+**/*.private*.json
