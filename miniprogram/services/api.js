@@ -1,4 +1,4 @@
-const API_BASE_URL = 'https://wechat-obsync.mindover.us.kg';
+const API_BASE_URL = 'https://YOUR_API_BASE_URL';
 
 class ApiService {
   constructor() {
@@ -49,7 +49,7 @@ class ApiService {
               this.userId = data.userId || this.userId;
               wx.setStorageSync('token', this.token);
               wx.setStorageSync('userId', this.userId);
-              console.log('Bind success, saved token:', this.token);
+              console.log('Bind success — token saved (redacted)'); // 不在日志中打印原始 token
               resolve({ success: true });
             } else if (data.error === '绑定码已使用') {
               console.log('Already bound');
