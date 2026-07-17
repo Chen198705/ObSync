@@ -1,23 +1,5 @@
 {
   "libVersion": "3.3.5",
-  "projectname": "WeChat%20Obsync",
-  "condition": {},
-  "setting": {
-    "urlCheck": true,
-    "coverView": true,
-    "lazyloadPlaceholderEnable": false,
-    "skylineRenderEnable": false,
-    "preloadBackgroundData": false,
-    "autoAudits": false,
-    "useApiHook": true,
-    "showShadowRootInWxmlPanel": true,
-    "useStaticServer": false,
-    "useLanDebug": false,
-    "showES6CompileOption": false,
-    "compileHotReLoad": true,
-    "checkInvalidKey": true,
-    "ignoreDevUnusedFiles": true,
-    "bigPackageSizeSupport": false,
-    "useIsolateContext": true
-  }
+  "projectname": "WeChat Obsync",
+  "note": "THIS FILE HAS BEEN REDACTED. Place private settings (appId, appSecret, private keys) in a secure location outside the repo. See README or project documentation for deployment instructions."
 }
