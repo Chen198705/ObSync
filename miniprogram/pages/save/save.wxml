@@ -1,0 +1,23 @@
+<view class="container">
+  <view class="header">
+    <text class="title">保存微信文章</text>
+    <text class="desc">自动抓取文章标题和正文</text>
+  </view>
+
+  <view class="article-info">
+    <text class="article-url">{{article.url || '等待粘贴链接...'}}</text>
+  </view>
+
+  <view class="auto-fetch-tip">
+    <text>开启后，后端将自动抓取文章标题和正文</text>
+  </view>
+
+  <view class="success-tip" wx:if="{{saveSuccess}}">
+    <text class="success-title">保存成功！</text>
+    <text class="fetched-title">{{fetchedTitle}}</text>
+  </view>
+
+  <button class="btn btn-primary" bindtap="saveArticle" loading="{{loading}}">
+    保存到 Obsidian
+  </button>
+</view>

@@ -1,0 +1,7 @@
+name = "wechat-obsync"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+
+[[kv_namespaces]]
+binding = "OBSYNC_KV"
+id = "2e8eedd0edcb4252a32a79d805c80913"

@@ -1,0 +1,36 @@
+<view class="container">
+  <view class="header">
+    <image class="logo" src="/images/icon.png" mode="aspectFit"/>
+    <text class="title">WeChat Obsync</text>
+    <text class="subtitle">微信文章同步到 Obsidian</text>
+  </view>
+
+  <view class="status-card">
+    <view class="status-icon {{isBound ? 'bound' : 'unbound'}}">
+      <text>{{isBound ? '✓' : '✗'}}</text>
+    </view>
+    <view class="status-text">
+      <text class="status-label">{{isBound ? '已绑定' : '未绑定'}}</text>
+      <text class="status-desc">{{isBound ? '正在同步文章到 Obsidian' : '请先绑定 Obsidian 笔记库'}}</text>
+    </view>
+  </view>
+
+  <view class="action-buttons">
+    <button class="btn btn-primary" bindtap="goToSave" disabled="{{!isBound}}">
+      保存文章
+    </button>
+    <button class="btn btn-secondary" bindtap="goToArticles" disabled="{{!isBound}}">
+      查看已保存
+    </button>
+    <button class="btn btn-outline" bindtap="goToBind">
+      {{isBound ? '重新绑定' : '立即绑定'}}
+    </button>
+  </view>
+
+  <view class="tips">
+    <text class="tips-title">使用说明</text>
+    <text class="tips-item">1. 点击「立即绑定」生成绑定码</text>
+    <text class="tips-item">2. 在 Obsidian 的 WeChat Obsync 插件中输入绑定码</text>
+    <text class="tips-item">3. 绑定成功后，点击「保存文章」即可同步</text>
+  </view>
+</view>
